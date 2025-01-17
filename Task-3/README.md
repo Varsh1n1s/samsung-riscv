@@ -7,6 +7,7 @@
 
 ![image](https://github.com/user-attachments/assets/a0cc031e-ce7b-4c4b-8311-dff108dce75f)
 
+|00000|0000000001000010100|110111|
 
 ## 2. Instruction: _addi sp,sp,-16_
 
