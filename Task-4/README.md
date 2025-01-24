@@ -2,4 +2,4 @@
 
 ## Output Waveform
 
-
+### Instruction 1: 
