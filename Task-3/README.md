@@ -1,5 +1,31 @@
 # Task - 3:
 
+
+---
+
+### Instructions Table
+
+| **Instruction**                  | **HEX Code** | **Instruction Type** | **Breakdown**                                                                                          |
+|----------------------------------|--------------|-----------------------|--------------------------------------------------------------------------------------------------------|
+| `lui a0, 0x21`                   | `00021537`   | U-Type               | `imm=0x21`, `rd=a0(10)`, `opcode=0x37`                                                                |
+| `addi sp, sp, -16`               | `FF010113`   | I-Type               | `imm=0xFFF0`, `rs1=sp(2)`, `funct3=0x0`, `rd=sp(2)`, `opcode=0x13`                                    |
+| `li a2, 120`                     | `07800613`   | I-Type               | `imm=0x78`, `rs1=0`, `funct3=0x0`, `rd=a2(12)`, `opcode=0x13`                                         |
+| `sd ra, 8(sp)`                   | `00113423`   | S-Type               | `imm=0x8`, `rs1=sp(2)`, `rs2=ra(1)`, `funct3=0x3`, `opcode=0x23`                                      |
+| `jal ra, 10480`                  | `3B8000EF`   | J-Type               | `imm=0x28F0`, `rd=ra(1)`, `opcode=0x6F`                                                               |
+| `ld ra, 8(sp)`                   | `00813083`   | I-Type               | `imm=0x8`, `rs1=sp(2)`, `funct3=0x3`, `rd=ra(1)`, `opcode=0x03`                                       |
+| `ret`                            | `00008067`   | I-Type               | `imm=0x0`, `rs1=ra(1)`, `funct3=0x0`, `rd=0`, `opcode=0x67`                                           |
+| `auipc a5, 0xffff0`              | `FFFF0797`   | U-Type               | `imm=0xFFFF0`, `rd=a5(15)`, `opcode=0x17`                                                             |
+| `beqz a5, 100f4 <register_fini+0x18>` | `00078863`   | B-Type               | `imm=0x18`, `rs1=a5(15)`, `rs2=0`, `funct3=0x0`, `opcode=0x63`                                        |
+| `j 10228`                        | `1380006F`   | J-Type               | `imm=0x2800`, `rd=0`, `opcode=0x6F`                                                                   |
+| `sub a2, a2, a0`                 | `40A60633`   | R-Type               | `funct7=0x20`, `rs2=a0(10)`, `rs1=a2(12)`, `funct3=0x0`, `rd=a2(12)`, `opcode=0x33`                   |
+| `lw a0, 0(sp)`                   | `00012503`   | I-Type               | `imm=0x0`, `rs1=sp(2)`, `funct3=0x2`, `rd=a0(10)`, `opcode=0x03`                                      |
+| `lbu a5, 1944(gp) # 231a0 <completed.5468>` | `7981C783`   | I-Type               | `imm=0x798`, `rs1=gp(3)`, `funct3=0x4`, `rd=a5(15)`, `opcode=0x03`                                    |
+| `sb a5, 1944(gp) # 231a0 <completed.5468>` | `78F18C23`   | S-Type               | `imm=0x798`, `rs1=gp(3)`, `rs2=a5(15)`, `funct3=0x0`, `opcode=0x23`                                   |
+| `mv a1, s0`                      | `00040593`   | I-Type               | `imm=0x0`, `rs1=s0(8)`, `funct3=0x0`, `rd=a1(11)`, `opcode=0x13`                                      |
+
+---
+
+
 ## 1. Instruction: _lui a0, 0x21_
 
 ![image](https://github.com/user-attachments/assets/e6dafdfe-5232-4a75-b687-c233a26940b1)
@@ -7,10 +33,6 @@
 
 ![image](https://github.com/user-attachments/assets/a0cc031e-ce7b-4c4b-8311-dff108dce75f)
 
-|    *rd[7:0]*  | *immediate[19:0]*      | *opcode[6:0]* |
-|----------|------------------------|--------|
-|    00000 |  0000000001000010100   | 110111 |
-|  dest    | 20-bit upper immediate |  LUI   |
 
 ## 2. Instruction: _addi sp,sp,-16_
 
