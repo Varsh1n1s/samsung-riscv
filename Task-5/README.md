@@ -1,53 +1,82 @@
-# TASK-5: Simple Calculator 
-
+# TASK-5: Intruder Detection Using IR Sensor
 ## Circuit Diagram:
-<img width="733" alt="Circuit Diagram" src="https://github.com/user-attachments/assets/a6e28ff6-7843-442c-a239-3d13d5e4e42b" />
 
-## Introduction:
 
-The *Simple Calculator* Project performs basic arithmetic operations such as addition, subtraction, multiplication, and division using hardware logic. It is designed to take inputs, process the selected operation, and display the result efficiently.
-This project demonstrates the practical implementation of digital design concepts, focusing on modularity, logic development, and efficient computation. It provides a foundational understanding of arithmetic operations in digital circuits.
+### **Overview of Intruder Detection Using IR Sensor and VSDSquadron Mini**
 
-## Overview:
+Intruder detection systems are widely used in security applications to monitor unauthorized access to restricted areas. This project utilizes an **Infrared (IR) sensor** and **VSDSquadron Mini**, a small yet powerful FPGA development board, to implement an efficient and real-time intruder detection system.
 
-The Simple Calculator Project is designed to perform basic arithmetic operations—addition, subtraction, multiplication, and division—using hardware logic. It allows the user to input numbers and select operations through a 4x4 keypad, and the results are displayed on an LCD display.
-Key Features of the Calculator:
-1. Arithmetic Operations:
-- Addition
-- Subtraction
-- Multiplication
-- Division
-2. Input Method: 4x4 Keypad: Used for entering numbers and selecting operations.
-3. Output Display: LCD Display: Shows the results of the arithmetic operations.
-4. Control Logic: A control unit processes the input from the keypad, performs the selected arithmetic operation, and drives the LCD to display the result.
+The system works by detecting movement using an **IR sensor**, which senses infrared radiation emitted by objects, particularly human bodies. When an intruder crosses the sensor’s range, it triggers a signal that is processed by the **VSDSquadron Mini**, which then activates an alert mechanism, such as a buzzer or LED indication. This setup can be further extended to send notifications or trigger alarms for enhanced security.
 
-## Components Required:
+---
+
+### **Introduction**
+Security is a critical concern in both residential and industrial settings. Traditional surveillance systems, like CCTV cameras, often require continuous human monitoring, making them inefficient in terms of cost and manpower. Automated **Intruder Detection Systems** provide a reliable alternative by using **motion sensors and microcontrollers or FPGAs** to detect unauthorized access in real-time.
+
+This project employs an **IR sensor** to detect motion and **VSDSquadron Mini**, an FPGA-based development board, to process signals and control output responses. **FPGAs** offer advantages such as parallel processing, real-time operation, and flexibility in implementing customized security solutions.
+
+The **primary objectives** of this project are:
+- To detect unauthorized intrusions using an **IR sensor**.
+- To process sensor data efficiently using **VSDSquadron Mini**.
+- To trigger an appropriate response, such as an alarm or alert system.
+- To explore the **real-time capabilities of FPGA-based security systems**.
+
+This system is highly scalable and can be enhanced with additional features like **wireless communication, multiple sensor integration, and AI-based detection algorithms** for advanced security applications.
+
+### Components Required:
 
 1.	VSD Squadron Mini
-2.	4x4 Matrix Keyboard
-3.	LCD Display(I2C)
-4.	Jumper Wire
+2.	IR Sensor
+3.	Buzzer
+4.	LED
+5.	330 ohm Resistor
+6.	Jumper wire
+7.	Breadboard
 
-## Pin Connections:
-1. LCD Display(I2C):
+### Pin Connections:
 
-| **PIN on LCD** | **PIN on Board** |
+
+| **Component** | **PIN on Board** |
 |----------------|------------------|
-| GND           | GND              |
-| VCC           | 5V               |
-| SDA           | PC1              |
-| SCL           | PC2              |
+| LED           | Pin 6             |
+| Buzzer           | Pin 5               |
+| IR Sensor          | Pin 4             |
 
+### Applications:
+ 
 
-2. 4x4 Matrix Keypad:
+This project can be applied in various security and automation domains, including:  
 
-| **Pin** | **Connection** |
-|---------|----------------|
-| Pin 1   | PD0            |
-| Pin 2   | PD1            |
-| Pin 3   | PD2            |
-| Pin 4   | PD3            |
-| Pin 5   | PD4            |
-| Pin 6   | PD5            |
-| Pin 7   | PD6            |
-| Pin 8   | PD7            |
+#### **1. Home Security Systems**  
+- Detects unauthorized entry into homes and alerts homeowners.  
+- Can be integrated with smart home systems to send notifications via mobile apps.  
+
+#### **2. Industrial and Commercial Security**  
+- Protects warehouses, factories, and office spaces from unauthorized access.  
+- Can be used in restricted areas where only authorized personnel are allowed.  
+
+#### **3. Military and Defense Applications**  
+- Helps in perimeter security by detecting intrusions in restricted zones.  
+- Can be deployed in border security to detect unauthorized movements.  
+
+#### **4. ATM and Bank Security**  
+- Detects suspicious movements near ATMs to prevent thefts.  
+- Triggers an alarm when unauthorized activity is detected.  
+
+#### **5. Automated Parking and Access Control**  
+- Monitors vehicle entry and exit in parking lots.  
+- Can be used to trigger gates or barriers automatically.  
+
+#### **6. Smart Surveillance Systems**  
+- Enhances traditional CCTV systems by triggering recording only when motion is detected.  
+- Reduces storage and energy consumption by activating only when needed.  
+
+#### **7. Agriculture and Wildlife Monitoring**  
+- Detects movement of animals in restricted farming areas.  
+- Helps in monitoring wildlife movement and preventing poaching.  
+
+#### **8. Hospital and Elderly Care Monitoring**  
+- Monitors patient movement in hospitals for safety purposes.  
+- Can be used to detect falls or unusual movement patterns in elderly care facilities.  
+
+This project can be further extended with **AI-based intrusion detection, wireless connectivity, and cloud integration** to improve its functionality and reliability.
