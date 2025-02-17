@@ -1,5 +1,7 @@
 # TASK-5: Intruder Detection Using IR Sensor
+
 ## Circuit Diagram:
+![Screenshot 2025-02-17 225119](https://github.com/user-attachments/assets/19b3a2d1-51cf-4226-9952-c8065bb95ecf)
 
 
 ## **Overview of Intruder Detection Using IR Sensor and VSDSquadron Mini**
