@@ -2,7 +2,7 @@
 ## Circuit Diagram:
 
 
-### **Overview of Intruder Detection Using IR Sensor and VSDSquadron Mini**
+## **Overview of Intruder Detection Using IR Sensor and VSDSquadron Mini**
 
 Intruder detection systems are widely used in security applications to monitor unauthorized access to restricted areas. This project utilizes an **Infrared (IR) sensor** and **VSDSquadron Mini**, a small yet powerful FPGA development board, to implement an efficient and real-time intruder detection system.
 
@@ -10,7 +10,7 @@ The system works by detecting movement using an **IR sensor**, which senses infr
 
 ---
 
-### **Introduction**
+## **Introduction**
 Security is a critical concern in both residential and industrial settings. Traditional surveillance systems, like CCTV cameras, often require continuous human monitoring, making them inefficient in terms of cost and manpower. Automated **Intruder Detection Systems** provide a reliable alternative by using **motion sensors and microcontrollers or FPGAs** to detect unauthorized access in real-time.
 
 This project employs an **IR sensor** to detect motion and **VSDSquadron Mini**, an FPGA-based development board, to process signals and control output responses. **FPGAs** offer advantages such as parallel processing, real-time operation, and flexibility in implementing customized security solutions.
@@ -23,7 +23,7 @@ The **primary objectives** of this project are:
 
 This system is highly scalable and can be enhanced with additional features like **wireless communication, multiple sensor integration, and AI-based detection algorithms** for advanced security applications.
 
-### Components Required:
+## Components Required:
 
 1.	VSD Squadron Mini
 2.	IR Sensor
@@ -33,7 +33,7 @@ This system is highly scalable and can be enhanced with additional features like
 6.	Jumper wire
 7.	Breadboard
 
-### Pin Connections:
+## Pin Connections:
 
 
 | **Component** | **PIN on Board** |
@@ -42,7 +42,7 @@ This system is highly scalable and can be enhanced with additional features like
 | Buzzer           | Pin 5               |
 | IR Sensor          | Pin 4             |
 
-### Applications:
+## Applications:
  
 
 This project can be applied in various security and automation domains, including:  
